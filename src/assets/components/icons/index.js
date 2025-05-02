@@ -1,0 +1,17 @@
+export { default as ReactIcon } from './ReactIcon';
+export { default as HtmlIcon } from './HtmlIcon';
+export { default as CssIcon } from './CssIcon';
+export { default as JavascriptIcon } from './JavascriptIcon';
+export { default as SassIcon } from './SassIcon';
+export { default as TailwindIcon } from './TailwindIcon';
+export { default as BootstrapIcon } from './BootstrapIcon';
+export { default as JavaIcon } from './JavaIcon';
+export { default as MysqlIcon } from './MysqlIcon';
+export { default as PhpIcon } from './PhpIcon';
+export { default as LaravelIcon } from './LaravelIcon';
+export { default as DockerIcon } from './DockerIcon';
+export { default as IllustratorIcon } from './IllustratorIcon';
+export { default as PhotoshopIcon } from './PhotoshopIcon';
+export { default as FigmaIcon } from './FigmaIcon';
+export { default as IndesignIcon } from './IndesignIcon';
+export { default as LinkedinIcon } from './LinkedinIcon';
