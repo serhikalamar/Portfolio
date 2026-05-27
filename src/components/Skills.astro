@@ -1,0 +1,72 @@
+---
+const categories = [
+  {
+    title: 'Frontend',
+    skills: ['Angular 18', 'TypeScript', 'RxJS', 'HTML5', 'CSS3 / SCSS', 'Astro'],
+  },
+  {
+    title: 'Maquetación & Diseño',
+    skills: ['CSS Grid', 'Flexbox', 'Responsive Design', 'Design Systems', 'Figma', 'Animaciones CSS'],
+  },
+  {
+    title: 'Herramientas',
+    skills: ['Git / GitHub', 'VS Code', 'Node.js', 'npm', 'Supabase', 'Netlify / Vercel'],
+  },
+];
+---
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Mis <span>skills</span></h2>
+    <p class="section-subtitle">Tecnologías y herramientas que uso en el día a día</p>
+    <div class="grid">
+      {categories.map(cat => (
+        <div class="card">
+          <h3>{cat.title}</h3>
+          <ul>
+            {cat.skills.map(s => <li>{s}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    transition: border-color .25s;
+  }
+  .card:hover { border-color: rgba(168,85,247,.4); }
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent-2);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-size: .8rem;
+  }
+  ul { list-style: none; display: flex; flex-direction: column; gap: .65rem; }
+  li {
+    color: var(--text-muted);
+    font-size: .95rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: .75rem;
+    top: .15em;
+  }
+</style>

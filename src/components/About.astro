@@ -1,0 +1,67 @@
+---
+---
+<section id="sobre-mi">
+  <div class="container">
+    <h2 class="section-title">Sobre <span>mí</span></h2>
+    <p class="section-subtitle">Quién soy y qué me mueve</p>
+    <div class="about-grid">
+      <div class="text-col">
+        <p>
+          Soy desarrollador frontend con especial pasión por la <strong>maquetación CSS</strong>,
+          los sistemas de diseño y las interfaces que combinan estética y rendimiento.
+        </p>
+        <p>
+          Actualmente trabajo con <strong>Angular 18</strong> en proyectos de producción,
+          aplicando signals, standalone components y arquitecturas limpias basadas en servicios reactivos.
+        </p>
+        <p>
+          Me interesa tanto el código como el pixel perfecto: disfruto cuidar tipografía,
+          espaciado y micro-interacciones tanto como la arquitectura de componentes.
+        </p>
+      </div>
+      <div class="card-col">
+        <div class="info-card">
+          <ul>
+            <li><span class="label">Ubicación</span><span>España</span></li>
+            <li><span class="label">Disponibilidad</span><span class="badge">Abierto a proyectos</span></li>
+            <li><span class="label">Idiomas</span><span>ES · UK · RU</span></li>
+            <li><span class="label">Enfoque</span><span>Frontend · UI</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 3rem;
+    align-items: start;
+  }
+  .text-col { display: flex; flex-direction: column; gap: 1.2rem; }
+  .text-col p { color: var(--text-muted); line-height: 1.8; }
+  .text-col strong { color: var(--text); }
+  .info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+  }
+  ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+  li { display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+  .label { color: var(--text-muted); }
+  .badge {
+    background: rgba(124,58,237,.2);
+    color: var(--accent-2);
+    padding: .2rem .7rem;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; }
+  }
+</style>

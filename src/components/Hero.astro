@@ -1,0 +1,83 @@
+---
+---
+<section id="inicio" class="hero">
+  <div class="container">
+    <p class="eyebrow">Hola, soy</p>
+    <h1>Serhi<br /><span>Developer &amp; UI Engineer</span></h1>
+    <p class="bio">
+      Construyo interfaces web rápidas, accesibles y con personalidad.<br />
+      Especializado en Angular, maquetación CSS avanzada y diseño de sistemas.
+    </p>
+    <div class="cta-group">
+      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+      <a href="#contacto" class="btn-ghost">Contacto</a>
+    </div>
+  </div>
+  <div class="glow" aria-hidden="true"></div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-block: 0;
+  }
+  .container { position: relative; z-index: 1; }
+  .eyebrow {
+    color: var(--accent-2);
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: .85rem;
+    margin-bottom: .75rem;
+  }
+  h1 {
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+  h1 span { color: var(--accent-2); }
+  .bio {
+    color: var(--text-muted);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 540px;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+  .cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    padding: .75rem 1.75rem;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: .95rem;
+    transition: opacity .2s, transform .2s;
+  }
+  .btn-primary:hover { opacity: .85; transform: translateY(-1px); }
+  .btn-ghost {
+    padding: .75rem 1.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: .95rem;
+    color: var(--text-muted);
+    transition: border-color .2s, color .2s;
+  }
+  .btn-ghost:hover { border-color: var(--accent-2); color: var(--text); }
+  .glow {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124,58,237,.25) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>

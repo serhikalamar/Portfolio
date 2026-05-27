@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Contact from '../components/Contact.astro';
+---
+<Layout>
+  <Navbar />
+  <main>
+    <Hero />
+    <About />
+    <Skills />
+    <Contact />
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2026 Serhi · Hecho con <a href="https://astro.build" target="_blank">Astro</a></p>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  main { padding-top: 60px; }
+  footer {
+    padding-block: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  footer p { color: var(--text-muted); font-size: .875rem; }
+  footer a { color: var(--accent-2); }
+</style>
